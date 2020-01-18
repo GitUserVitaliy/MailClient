@@ -20,7 +20,10 @@ public class MainController {
         return "MainPage";
     }
     @GetMapping("/test")
-    public void sendTestMessage(){
-        mailService.sendSimpleMessage("chernickovvit@yandex.ru","@Started","Simple message...");https://github.com/GitUserVitaliy/MailClient.git
+    public String sendTestMessage(){
+        String first = "kosmynin.lenya@yandex.ru";
+        String second = "chernickovvit.public@gmail.com";
+        mailService.sendSimpleMessage(first,"@TestMessage","Simple message...");
+        return "MainPage";
     }
 }
