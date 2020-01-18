@@ -8,25 +8,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="/css/CommonStyle.css" rel="stylesheet">
 
-    <style>
-        #nice {
-            border-radius: 50px; /* Уголки */
-        }
-        #ban{
-            padding-right: 37px;
-            margin-bottom: 5px;
-        }
-        #ban1{
-            padding-right: 50px;
-            margin-top: 5px;
-            margin-bottom: 5px;
-        }
-        #ban2{
-            padding-right: 30px;
-            margin-bottom: 5px;
-        }
-    </style>
 
     <title>Почта</title>
 </head>
@@ -53,12 +36,22 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-1.5">
-                <a href="http://localhost:8080/mail/write"><button id="nice" type="button" class="btn btn-primary btn-lg">Написать</button></a>
+                <a href="http://localhost:8080/write">
+                    <button id="nice" type="button" class="btn btn-primary btn-lg">Написать</button>
+                </a>
                 <hr>
-                <a href="http://localhost:8080/mail/post"> <button id="ban" type="button" class="btn btn-secondary">Входящие</button></a><br>
-                <a href="http://localhost:8080/mail/sent"> <button type="button" class="btn btn-secondary">Отправленые</button></a><br>
-                <a href="http://localhost:8080/mail/basket"> <button id="ban1" type="button" class="btn btn-secondary">Корзина</button></a><br>
-                <a href="http://localhost:8080/mail/favorites"><button id="ban2" type="button" class="btn btn-secondary">Избранное</button></a><br>
+                <a href="http://localhost:8080/post">
+                    <button id="ban" type="button" class="btn btn-secondary">Входящие</button>
+                </a><br>
+                <a href="http://localhost:8080/sent">
+                    <button type="button" class="btn btn-secondary">Отправленые</button>
+                </a><br>
+                <a href="http://localhost:8080/basket">
+                    <button id="ban1" type="button" class="btn btn-secondary">Корзина</button>
+                </a><br>
+                <a href="http://localhost:8080/favorites">
+                    <button id="ban2" type="button" class="btn btn-secondary">Избранное</button>
+                </a><br>
             </div>
             <div class="col-10">
 
